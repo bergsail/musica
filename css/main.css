@@ -1,0 +1,271 @@
+﻿/*/* 
+    Document   : main
+    Created on : 07-Mar-2012, 20:48:38
+    Author     : ignatius fernandes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-fixed-top{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:1030;
+	height: 40px;
+	background-image: -moz-linear-gradient(top, #242424 0%, #000000 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #242424), color-stop(1, #000000));
+	background-image: -webkit-linear-gradient(top, #242424 0%, #000000 100%);
+
+}
+
+#navmenu{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+#navmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#navmenu ul li{
+	display: inline;
+}
+
+#navmenu ul li a{
+	text-decoration: none;
+	margin: 4px;
+	padding: 5px 20px 5px 20px;
+	color: white;
+}
+
+#navmenu ul li a:hover{
+	color: #666;
+}
+
+#emp{
+	padding:0;
+}
+
+.art{
+    display: none;
+    border:none;
+    width: inherit;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+.footer-fixed-bottom{
+	position:fixed;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:1030;
+	height: 40px;
+	background-image: -moz-linear-gradient(top, #242424 0%, #000000 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #242424), color-stop(1, #000000));
+	background-image: -webkit-linear-gradient(top, #242424 0%, #000000 100%);
+
+
+}
+
+/* Upload */
+/*body {
+    font: 0.8em/1em "trebuchet MS", arial, sans-serif;
+    color: #777;
+}
+
+h1 {
+    font-size: 1.6em;
+    margin: 30px 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+    padding: 0 0 6px 0;
+    margin: 0;
+    border-bottom: solid 1px #ccc;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    padding: 0 0 30px 0;
+}*/
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#fileDrop {
+    width: 360px;
+    height: 300px;
+    border: dashed 2px #ccc;
+    background-color: #fefefe;
+    float: left;
+    color: #ccc;
+}
+
+    #fileDrop p {
+        text-align: center;
+        padding: 125px 0 0 0;
+        font-size: 1.6em;
+    }
+
+#files {
+    margin: 0 0 0 400px;
+    width: 356px;
+    padding: 20px 20px 40px 20px;
+    border: solid 2px #ccc;
+    background: #fefefe;
+    min-height: 240px;
+    position: relative;
+}
+
+#fileDrop,
+#files {
+    -moz-box-shadow: 0 0 20px #ccc;
+}
+
+#fileList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    #fileList li {
+        margin: 0;
+        padding: 10px 0;
+        margin: 0;
+        overflow: auto;
+        border-bottom: solid 1px #ccc;
+        position: relative;
+    }
+
+        #fileList li img {
+            width: 120px;
+            border: solid 1px #999;
+            padding: 6px;
+            margin: 0 10px 0 0;
+            background-color: #eee;
+            display: block;
+            float: left;
+        }
+
+#reset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+#reset:hover {
+    color: #333;
+}
+
+#upload {
+    color: #fff;
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    background-color: #777;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-weight: bold;
+    -moz-border-radius: 6px;
+}
+
+#upload:hover {
+    background-color: #333;
+}
+
+.loader {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    color: orange;
+}
+
+.loadingIndicator {
+    width: 0%;
+    height: 2px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.imagePreview {
+    width: 300px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    position: absolute;
+    background-color: white;
+}
+
+.imagePreview img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+audio, #player1{
+	display: none;
+}
+   
+.playing{
+	color: #08C;
+}
+
+.selected{
+	color: red;
+}
+
+.hide{
+	display: none;
+}
+
+@media (max-width: 640px) {
+	.table-cell{
+		display: none;
+	}
+}
+.thumb{
+	height: 45px;
+	width: 45px;
+	float: left;
+	margin-right: 10px;
+}
+
+.interactions{
+	cursor: pointer;
+}
+
+.navbar-fixed-bottom .playbar{
+	height: 50px;
+}
